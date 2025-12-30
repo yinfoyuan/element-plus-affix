@@ -9,7 +9,13 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 export default defineConfig({
   plugins: [
     VueRouter(),
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag.startsWith('v-'),
+        },
+      },
+    }),
     AutoImport({
       resolvers: [ElementPlusResolver()],
     }),

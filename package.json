@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "element-plus": "2.13.0",
+    "element-plus": "https://pkg.pr.new/element-plus/element-plus@23235",
     "unplugin-auto-import": "20.3.0",
     "unplugin-vue-components": "30.0.0",
     "unplugin-vue-router": "0.19.1",
